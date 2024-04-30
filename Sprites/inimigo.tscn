@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4l7xsy7libgv"]
+
+[ext_resource type="Script" path="res://Sprites/inimigo.gd" id="1_63a4g"]
+[ext_resource type="Texture2D" uid="uid://8qj67t7ut1c7" path="res://Sprites/player2.png" id="1_etr34"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_com5p"]
+size = Vector2(65, 276)
+
+[node name="Inimigo" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_63a4g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-33.5, -1)
+shape = SubResource("RectangleShape2D_com5p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_etr34")
