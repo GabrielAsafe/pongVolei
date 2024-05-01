@@ -16,27 +16,61 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 649.0
 
-[node name="Button" type="Button" parent="Panel"]
-layout_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -83.5
-offset_top = -38.5
-offset_right = 43.5
-offset_bottom = -1.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Solo practice"
-
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 89.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.5
+offset_right = 203.5
+offset_bottom = 98.0
 grow_horizontal = 2
 text = "Best version of pong you will ever play"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[node name="ItemList" type="ItemList" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -396.0
+offset_top = -154.0
+offset_right = 396.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SoloPractice" type="Button" parent="Panel/ItemList"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.5
+offset_top = -18.5
+offset_right = 63.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Solo practice"
+
+[node name="multiplayer" type="Button" parent="Panel/ItemList"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = 35.5
+offset_right = 63.0
+offset_bottom = 68.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Multiplayer"
+
+[connection signal="pressed" from="Panel/ItemList/SoloPractice" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/ItemList/multiplayer" to="." method="_on_multiplayer_pressed"]

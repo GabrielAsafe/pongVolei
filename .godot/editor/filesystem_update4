@@ -1,7 +1,6 @@
-res://gameScreens/MainScreen.tscn
-res://Sprites/Player.tscn
-res://Sprites/inimigo.tscn
-res://Sprites/Player.gd
-res://gameScreens/MainScreen.gd
-res://Sprites/inimigo.gd
-res://Sprites/bola.tscn
+res://gameScreens/Game.tscn
+res://gameScreens/Game.gd
+res://UI/StartScreen.gd
+res://UI/StartScreen.tscn
+res://UI/MultiplayerConfig.tscn
+res://UI/MultiplayerConfig.gd
