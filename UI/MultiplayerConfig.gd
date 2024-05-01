@@ -1,24 +1,26 @@
-extends  "res://gameScreens/Game.gd" 
-
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
+extends  Control
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 func _on_host_button_down():
-	create_game()
-
-
+	var valor = Game.create_game()
+	#print("aguardando jogadores")
+	
+	if valor != null:
+		$Panel/Label.text = "Servidor já criado no pi " + Game.DEFAULT_SERVER_IP
+		
+	
 func _on_join_button_down():
-	join_game("127.0.0.1")
+	Game.join_game()
+	
 
 
 func _on_play_button_down():
-	load_game.rpc("res://UI/MultiplayerConfig.tscn")
+	Game.player_loaded.rpc()
+	Game.load_game.rpc("res://gameScreens/MultiplayerGame.tscn")
+	
+	
+	

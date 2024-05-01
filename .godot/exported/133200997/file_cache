@@ -1,0 +1,8 @@
+res://gameScreens/Game.tscn::a446cee95066ee172681aaf00a92a378::1714563457::res://.godot/exported/133200997/export-9b393373c1eb3e45f7e6ce3ec7e7dd25-Game.scn
+res://gameScreens/MultiplayerGame.tscn::79910c52c9acbd919ff1404dbb001f6f::1714563628::res://.godot/exported/133200997/export-d7c74871e067b7f556e00c49a884797a-MultiplayerGame.scn
+res://gameScreens/trainingScene.tscn::a015e705f7f4b16efd7f0885a6336eff::1714559017::res://.godot/exported/133200997/export-3b2fbc77166f8b536a3588cf73d1bfce-trainingScene.scn
+res://Sprites/bola.tscn::654bf3ddbd4b21d6e151e2639f79f54d::1714556582::res://.godot/exported/133200997/export-9c07980d7a1263140368f3e964e9708c-bola.scn
+res://Sprites/inimigo.tscn::ce12711efaaeb7df79622a263a1bbc9b::1714553779::res://.godot/exported/133200997/export-1c4ccf19c30d991060cce856f8e5d8a4-inimigo.scn
+res://Sprites/Player.tscn::81878a1787a4a90fc9d224b0c76c46cf::1714563457::res://.godot/exported/133200997/export-f23b9c5ad574c3dc2dab589a07ecd601-Player.scn
+res://UI/MultiplayerConfig.tscn::62a732e55ba40c45f1f8fea16d56a187::1714559098::res://.godot/exported/133200997/export-e3e0d61ab0643fb42c64fb6717e76da1-MultiplayerConfig.scn
+res://UI/StartScreen.tscn::38ff3d8ca864b8d6e669b93fe5db7c48::1714553779::res://.godot/exported/133200997/export-e24d008fb2660b537467a44d215dea02-StartScreen.scn

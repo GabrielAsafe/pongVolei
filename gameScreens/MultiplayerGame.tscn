@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bumhyo77g6qai"]
+
+[ext_resource type="Script" path="res://gameScreens/MultiplayerGame.gd" id="1_jb1ni"]
+[ext_resource type="PackedScene" uid="uid://cneps5qil1ylc" path="res://Sprites/Player.tscn" id="2_0mjgh"]
+
+[node name="MultiplayerGame" type="Node2D"]
+position = Vector2(-3, 1)
+script = ExtResource("1_jb1ni")
+PlayerScene = ExtResource("2_0mjgh")
+
+[node name="playerSpawn" type="Node2D" parent="."]
+position = Vector2(1, 0)
+
+[node name="0" type="Node2D" parent="playerSpawn" groups=["playerSpawnLocation"]]
+position = Vector2(45, 322)
+
+[node name="1" type="Node2D" parent="playerSpawn" groups=["playerSpawnLocation"]]
+position = Vector2(1115, 308)
