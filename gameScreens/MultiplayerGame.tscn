@@ -1,18 +1,42 @@
-[gd_scene load_steps=3 format=3 uid="uid://bumhyo77g6qai"]
+[gd_scene load_steps=5 format=3 uid="uid://bumhyo77g6qai"]
 
+[ext_resource type="PackedScene" uid="uid://bvwyvrq6v7t51" path="res://Sprites/bola.tscn" id="1_5aae8"]
 [ext_resource type="Script" path="res://gameScreens/MultiplayerGame.gd" id="1_jb1ni"]
 [ext_resource type="PackedScene" uid="uid://cneps5qil1ylc" path="res://Sprites/Player.tscn" id="2_0mjgh"]
+[ext_resource type="PackedScene" uid="uid://df50ebj36ecvx" path="res://utils/parede.tscn" id="4_v0f7p"]
 
 [node name="MultiplayerGame" type="Node2D"]
 position = Vector2(-3, 1)
 script = ExtResource("1_jb1ni")
 PlayerScene = ExtResource("2_0mjgh")
 
+[node name="Node" type="Node" parent="."]
+
+[node name="Parede" parent="Node" instance=ExtResource("4_v0f7p")]
+position = Vector2(-22.0001, 1)
+scale = Vector2(1.01316, 1)
+
+[node name="Parede2" parent="Node" instance=ExtResource("4_v0f7p")]
+position = Vector2(-2.99994, 650)
+scale = Vector2(1.01316, 1)
+
+[node name="Parede3" parent="Node" instance=ExtResource("4_v0f7p")]
+position = Vector2(1146, 853)
+rotation = -1.57079
+scale = Vector2(1, 0.907219)
+
+[node name="Parede4" parent="Node" instance=ExtResource("4_v0f7p")]
+position = Vector2(-1.00006, 843)
+rotation = -1.57079
+scale = Vector2(1, 0.907219)
+
 [node name="playerSpawn" type="Node2D" parent="."]
 position = Vector2(1, 0)
 
 [node name="0" type="Node2D" parent="playerSpawn" groups=["playerSpawnLocation"]]
-position = Vector2(45, 322)
+position = Vector2(252, 137)
 
 [node name="1" type="Node2D" parent="playerSpawn" groups=["playerSpawnLocation"]]
-position = Vector2(1115, 308)
+position = Vector2(77, 486)
+
+[node name="Bola" parent="." instance=ExtResource("1_5aae8")]

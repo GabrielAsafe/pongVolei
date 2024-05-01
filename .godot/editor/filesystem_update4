@@ -8,3 +8,7 @@ res://gameScreens/MultiplayerGame.gd
 res://UI/StartScreen.gd
 res://Sprites/Player.tscn
 res://Sprites/Player.gd
+res://Sprites/PlayerSolo.tscn
+res://Sprites/PlayerSolo.gd
+res://gameScreens/trainingScene.tscn
+res://utils/parede.tscn

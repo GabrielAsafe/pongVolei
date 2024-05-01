@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://df50ebj36ecvx"]
+
+[ext_resource type="Texture2D" uid="uid://dypconvs6irbc" path="res://utils/base.png" id="1_b3pqg"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_5nxqq"]
+b = Vector2(1147, 1)
+
+[node name="Parede" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.375, 7.62939e-06)
+scale = Vector2(1.63996, 0.0201545)
+texture = ExtResource("1_b3pqg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_5nxqq")

@@ -1,10 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://vlkesejcqdun"]
 
 [ext_resource type="Script" path="res://gameScreens/trainingScene.gd" id="1_b3dd8"]
-[ext_resource type="PackedScene" uid="uid://cneps5qil1ylc" path="res://Sprites/Player.tscn" id="1_kkalj"]
 [ext_resource type="PackedScene" uid="uid://bvwyvrq6v7t51" path="res://Sprites/bola.tscn" id="2_xcmqw"]
 [ext_resource type="PackedScene" uid="uid://b4l7xsy7libgv" path="res://Sprites/inimigo.tscn" id="4_1b722"]
-
+[ext_resource type="PackedScene" uid="uid://baswixh26fstw" path="res://Sprites/PlayerSolo.tscn" id="4_wokfb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ub0r0"]
 size = Vector2(51, 664)
@@ -25,10 +24,6 @@ a = Vector2(-1, 653)
 
 [node name="MainScreen" type="Node2D"]
 script = ExtResource("1_b3dd8")
-
-[node name="Player" parent="." instance=ExtResource("1_kkalj")]
-position = Vector2(77, 330)
-scale = Vector2(0.5, 0.5)
 
 [node name="Bola" parent="." instance=ExtResource("2_xcmqw")]
 position = Vector2(540, 131)
@@ -172,6 +167,9 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="Player" parent="." instance=ExtResource("4_wokfb")]
+position = Vector2(81, 310)
 
 [connection signal="area_entered" from="ParedeEsquerda" to="." method="_on_parede_esquerda_area_entered"]
 [connection signal="body_entered" from="ParedeEsquerda" to="." method="_on_parede_esquerda_body_entered"]

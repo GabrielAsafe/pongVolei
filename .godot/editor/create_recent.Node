@@ -1,4 +1,8 @@
 MultiplayerSynchronizer
+Node
+Sprite2D
+CollisionShape2D
+StaticBody2D
 Label
 Node2D
 Button
@@ -8,8 +12,3 @@ ItemList
 Panel
 Timer
 CharacterBody2D
-RigidBody2D
-CollisionShape2D
-Sprite2D
-StaticBody2D
-Area2D
